@@ -60,13 +60,9 @@ def all_supplies_in_holidays(holiday_hash)
     climate = season.to_s.capitalize
     puts "#{climate}:"
     season_array.each do |holiday, supplies_array|
-      for event in 
-        event = words.join(" ")
-      else 
-        event = holiday.to_s.capitalize
-      end  
+      holiday.to_s.split("_").capitalize!.join(" ")
       supplies = supplies_array.join(", ")
-      puts "  #{event}: #{supplies}"
+      puts "  #{holiday}: #{supplies}"
     end  
   end  
 end
