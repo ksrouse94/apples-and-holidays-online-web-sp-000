@@ -66,9 +66,9 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize!
         end 
         event = words.join
-      else  
+      else 
+        event = holiday.to_s.capitalize
       end  
-      event = holiday.to_s.capitalize
       supplies = supplies_array.join(", ")
       puts "  #{event}: #{supplies}"
     end  
