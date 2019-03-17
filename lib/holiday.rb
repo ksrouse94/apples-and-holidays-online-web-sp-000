@@ -41,7 +41,6 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
   :holiday = holiday_name
   :season = holiday
-  :holiday => [supply_array]
   holiday_hash[:season] = :holiday_name
   holiday_hash
 end
