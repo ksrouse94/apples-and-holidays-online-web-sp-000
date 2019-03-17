@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{climate}:"
     season_array.each do |holiday, supplies_array|
       if holiday == :new_years
-        words = :new_years.split("_")
+        words = :new_years.to_a.split("_")
         words.each do |word|
           word.capitalize!
         end 
