@@ -64,9 +64,9 @@ def all_supplies_in_holidays(holiday_hash)
       for word in holi_array do
         word.capitalize!
       end  
-      holi_array.join(" ")
+      event = holi_array.join(" ")
       supplies = supplies_array.join(", ")
-      puts "  #{holiday}: #{supplies}"
+      puts "  #{event}: #{supplies}"
     end  
   end  
 end
