@@ -60,6 +60,9 @@ def all_supplies_in_holidays(holiday_hash)
     climate = season.to_s.capitalize
     puts "#{climate}:"
     season_array.each do |holiday, supplies_array|
+      if holiday == :new_years
+        
+      end  
       event = holiday.to_s.capitalize
       supplies = supplies_array.join(", ")
       puts "  #{event}: #{supplies}"
